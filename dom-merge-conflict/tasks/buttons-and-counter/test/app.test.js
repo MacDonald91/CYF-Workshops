@@ -34,8 +34,8 @@ describe("button and counter", () => {
 
     expect(getByTestId(container, "counter")).toHaveTextContent(/^2$/);
   });
-
-  describe.skip("decrement button", () => {
+// describe.skip (.skip) has been removed, so the decrement button tests will run as well
+  describe("decrement button", () => {
     test("pressing Decrement decreases the counter", () => {
       const button = getByRole(container, "button", {
         name: "Decrement",
